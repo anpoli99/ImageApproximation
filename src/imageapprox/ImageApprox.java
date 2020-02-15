@@ -475,7 +475,7 @@ public class ImageApprox {
 	 * keeps track of saves
 	 */
 	public static void printIndex(String save) throws IOException {
-		BufferedReader read = new BufferedReader(new FileReader("saves/indicies.txt"));;
+		BufferedReader read = new BufferedReader(new FileReader("src/saves/indicies.txt"));;
 		String data = "";
 		while(read.ready()) {
 			data += read.readLine() +"\n";
