@@ -22,7 +22,6 @@ public class DrawPanel extends JPanel implements MouseMotionListener, ActionList
   
 	public static BufferedImage bufferedImage, bufferedImage2; 
 	public static BufferedImage testing, best;
-	//String fileName = "images/birds/download (1).jpg";
 	
   /** 
    * Draws on a Graphics object 
