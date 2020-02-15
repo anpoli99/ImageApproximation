@@ -46,9 +46,9 @@ public class ImageApprox {
 	static boolean paint_testing = true; //toggle whether to draw current image during comparisons-runs faster if false
 	static boolean remove_hairs = true; //cleans image by removing shapes invisible at lower resolutions
 	
-	static double load_scale = 1;
-	static int img_x =(int)(256 * load_scale), img_y = (int)( 256 * load_scale), color_chan = 3;
-	static int img_max_x = 400, img_max_y = 400; //maximum x/y size for image
+	static double load_scale = 1;	//image loaded from txt gets scaled by this
+	static int img_x =(int)(256 * load_scale), img_y = (int)( 256 * load_scale), color_chan = 3; //max x/y size for image
+	static int img_max_x = 400, img_max_y = 400; //max display size for image
 	static double[] image_data;
 	
 	static int n_size = 50; //population size
