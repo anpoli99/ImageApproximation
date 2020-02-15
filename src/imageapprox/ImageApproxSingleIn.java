@@ -41,10 +41,10 @@ public class ImageApproxSingleIn {
 	
 	public static BufferedImage bfi = null;
 	public static BufferedImage base = null;
-	public static String fileName = "src/images/coke.jpg";
-	static String loadFile = "src/saves/coke.txt";
-	static String saveFile = "src/saves/coke.txt";
-	static String imageSave = "src/saves/coke.png";
+	public static String fileName = "src/images/_.jpg";
+	static String loadFile = "src/saves/_.txt";
+	static String saveFile = "src/saves/_.txt";
+	static String imageSave = "src/saves/_.png";
 	
 	static int img_x = 256, img_y = 256;
 	static int img_max_x = 400, img_max_y = 400;
@@ -544,14 +544,14 @@ public class ImageApproxSingleIn {
 				",img_x:" + img_x + ",img_y:" + img_y);
 	}
 	public static void printIndex(String save) throws IOException {
-		BufferedReader read = new BufferedReader(new FileReader("saves/indicies.txt"));;
+		BufferedReader read = new BufferedReader(new FileReader("src/saves/indicies.txt"));;
 		String data = "";
 		while(read.ready()) {
 			data += read.readLine() +"\n";
 			if(data.contains("#")) {break;}
 		}
 		read.close();
-		PrintWriter outwriter = new PrintWriter(new BufferedWriter(new FileWriter("saves/indicies.txt") ) );
+		PrintWriter outwriter = new PrintWriter(new BufferedWriter(new FileWriter("src/saves/indicies.txt") ) );
 		outwriter.println(data);
 		outwriter.println(save);
 		outwriter.close();
