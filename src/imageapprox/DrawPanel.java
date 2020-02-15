@@ -62,9 +62,6 @@ public class DrawPanel extends JPanel implements MouseMotionListener, ActionList
 	} 
 	
 	
-  public void setFileName(String str) {
-	 // fileName = str;
-  }
   /** 
    * Overrides JPanel's paintComponent method 
    * 
