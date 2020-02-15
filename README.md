@@ -11,20 +11,20 @@ There are two classes. ImageApproximation uses a purely genetic algorithm to app
 This implementation supports circles, triangles, squares, rectangles and polygons with n-sides (not necessarily simple). 
 
 ## Parameters: 
-**shape** (**Shape** enum): determines the shapes used for approximation.
+*Shape* **shape**: determines the shapes used for approximation.
 
-**fileName** is the location of the image to be approximated. 
+*String* **fileName** is the location of the image to be approximated. 
 
-**loadFile/saveFile** are where the parameters of the current training session can be loaded/saved as a .txt file.
+*String* **loadFile/saveFile** are where the parameters of the current training session can be loaded/saved as a .txt file.
 
-**imageSave** is the location where the new image will be saved.
+*String* **imageSave** is the location where the new image will be saved.
 
-**loadScale**: when an image is loaded, all locations will be scaled by this number (used for upscaling/downscaling an image).
+*String* **loadScale**: when an image is loaded, all locations will be scaled by this number (used for upscaling/downscaling an image).
 
-**img_x/img_y**: the image will preserve ratio, but the maximum of its x/y dimensions are determined by these variables.
+*int* **img_x/img_y**: the image will preserve ratio, but the maximum of its x/y dimensions are determined by these variables.
 
-**n_size**: the number of mutations per generation
+*int* **n_size**: the number of mutations per generation
 
-**shapes**: the number of shapes used in each approximation.
+*int* **shapes**: the number of shapes used in each approximation.
 
-**p_survive**: the proportion of shapes that will be passed onto the next generation.
+*double* **p_survive**: the proportion of shapes that will be passed onto the next generation.
