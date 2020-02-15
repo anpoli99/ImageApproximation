@@ -190,17 +190,6 @@ public class ImageApproxSingleIn {
 	public static void input() throws IOException {
 		File file = new File(fileName);
 		
-		if (!file.canRead())
-		{
-			// try adding the media path 
-			file = new File(FileChooser.getMediaPath(fileName));
-			if (!file.canRead())
-			{
-				throw new IOException(fileName
-						+ " could not be opened. Check that you specified the path");
-			}
-		}	
-
 		bfi = ImageIO.read(file);
 		BufferedImage bfi2 = ImageIO.read(file);
 	
