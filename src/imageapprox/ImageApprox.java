@@ -482,7 +482,7 @@ public class ImageApprox {
 			if(data.contains("#")) {break;}
 		}
 		read.close();
-		PrintWriter outwriter = new PrintWriter(new BufferedWriter(new FileWriter("saves/indicies.txt") ) );
+		PrintWriter outwriter = new PrintWriter(new BufferedWriter(new FileWriter("src/saves/indicies.txt") ) );
 		outwriter.println(data);
 		outwriter.println(save);
 		outwriter.close();
