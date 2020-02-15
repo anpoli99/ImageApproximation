@@ -6,7 +6,9 @@ This project uses a genetic algorithm to approximate a given input image, by mut
 
 There are two classes. ImageApproximation uses a purely genetic algorithm to approximate an image. However, if the algorithm needs to move one shape, it could try hundreds of "bad ideas" before moving that shape. Motivated by this, ImageApproxSingleIn places each image one at a time. The result is that images converge much more quickly, however shapes often do not overlap, leading to less detail and a higher net loss. 
 
-This implemenation supports circles, triangles, squares, rectangles and polygons with n-sides (not necessarily simple). 
+
+
+This implementation supports circles, triangles, squares, rectangles and polygons with n-sides (not necessarily simple). 
 
 ## Parameters: 
 **shape** (**Shape** enum): determines the shapes used for approximation.
