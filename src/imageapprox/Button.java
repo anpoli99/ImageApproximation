@@ -6,6 +6,9 @@ import java.awt.Font;
 import javax.swing.JLabel;
 import javax.swing.border.LineBorder;
 
+/*
+stores boundary for JLabel, to detect if mouse is in bounds
+*/
 public class Button {
 	JLabel label = new JLabel();
 	int x1, x2, y1, y2;
