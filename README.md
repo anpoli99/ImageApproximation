@@ -5,12 +5,18 @@ This project uses a genetic algorithm to approximate a given input image, by mut
 ## Usage
 
 There are two classes. ImageApproximation uses a purely genetic algorithm to approximate an image. However, if the algorithm needs to move one shape, it could try hundreds of "bad ideas" before moving that shape. Motivated by this, ImageApproxSingleIn places each image one at a time. The result is that images converge much more quickly, however shapes often do not overlap, leading to less detail and a higher net loss. 
-
+(Below: upper features all shapes mutated simultaneously, lower features one shape placed at a time)
 ![Mutates all shapes simultaneously](/saves/glacier1.png)
 ![Places one shape at a time](/saves/glacier2.png)
 
 
 This implementation supports circles, triangles, squares, rectangles and polygons with n-sides (not necessarily simple). 
+
+(Below: in order, example of triangle, circle, square and rectangle implementation)
+![Triangle](/saves/cokehd.png)
+![Circle](/saves/cokecirclehd.png)
+![Square](/saves/cokesquare.png)
+![Rectangle](/saves/cokerect.png)
 
 ## Parameters: 
 *Shape* **shape**: determines the shapes used for approximation.
@@ -30,3 +36,12 @@ This implementation supports circles, triangles, squares, rectangles and polygon
 *int* **shapes**: the number of shapes used in each approximation.
 
 *double* **p_survive**: the proportion of shapes that will be passed onto the next generation.
+
+## More results:
+All results can be found in the attached */saves* folder.
+![](/saves/walrus.png)
+![](/saves/starry_night.png)
+![](/saves/saturn2.png)
+![](/saves/cactus.png)
+![](/saves/bonzaicircle.png)
+![](/saves/earthcircle.png)
