@@ -4,7 +4,7 @@ This project uses a genetic algorithm to approximate a given input image, by mut
 
 ## Usage
 
-There are two classes. ImageApproximation uses a purely genetic algorithm to approximate an image. However, if the algorithm needs to move one shape, it could try hundreds of "bad ideas" before moving that shape. Motivated by this, ImageApproxSingleIn places each image one at a time. The result is that images converge much more quickly, however shapes often do not overlap, leading to less detail and a higher net loss. 
+There are two classes. ImageApproximation uses a purely genetic algorithm to approximate an image. However, if the algorithm needs to move one shape, it could try hundreds of "bad ideas" before moving that shape. Motivated by this, ImageApproxSingleIn places each image one at a time. The result is that images converge much more quickly, and shapes often do not overlap, leading to less detail and a higher net loss, but also a somewhat cleaner image. 
 (Below: upper features all shapes mutated simultaneously, lower features one shape placed at a time)
 ![Mutates all shapes simultaneously](/saves/glacier1.png)
 ![Places one shape at a time](/saves/glacier2.png)
